@@ -155,12 +155,4 @@ contract OrderSwapContract is ReentrancyGuard, Ownable {
         return userBalances[user][token];
     }
 
-    /**
-     * @dev Allows the contract owner to withdraw all tokens of a specific type in case of emergency
-     * @param token Address of the token to withdraw
-     */
-    function emergencyWithdraw(address token) external onlyOwner {
-        uint256 balance = IERC20(token).balanceOf(address(this));
-        IERC20(token).safeTransfer(owner(), balance);
-    }
 }

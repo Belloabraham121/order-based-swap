@@ -42,7 +42,6 @@ struct Order {
 3. `executeOrder`: Execute an active order.
 4. `getOrderDetails`: Retrieve details of a specific order.
 5. `getUserBalance`: Check the balance of a user for a specific token.
-6. `emergencyWithdraw`: Allow the owner to withdraw tokens in case of emergency.
 
 ## Usage
 
